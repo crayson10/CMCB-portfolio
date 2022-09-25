@@ -19,6 +19,10 @@
     background-color: var(--accent);
     
   }
+  #head-img {
+    width: 100%;
+    height: 20%;
+  }
   .header-links {
     word-spacing: 5px;
     text-align: right;
@@ -41,8 +45,33 @@ color: var(--primary);
 background-color: antiquewhite;
 }
 .box {
+  margin: 20px;
+  background-color: green;
+  width: 500px;
+  height: 300px;
   size: 400px;
-  display: flex;
-  flex-direction: row-reverse;
+  position: relative;
+  text-align: top 200px;
 
+}
+#bigbox {
+  background-color: rgb(100, 25, 25);
+  margin: 20px;
+  float: right;
+  width:790px;
+  height: 400px;
+}
+@media screen and (max-width: 992px) {
+  .box .bigbox {
+    width: 50%;
+  }
+  
+  header {
+    background: #772014;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box .bigbox {
+    width: 100%;
+  }
 }
