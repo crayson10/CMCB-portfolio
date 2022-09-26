@@ -9,7 +9,47 @@
     box-sizing: border-box;
     
   }
+  #p {
+    color: #fff;
+    font-size: 25px;
+    text-align: right;
+    list-style-position: outside;
+  }
+  aside {
+    flex: 2;
+    padding: 80px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    color: #fff;
+    border-right: #fff;
+    border-style: dashed;
+    border: 10px;
+
+  }
+  aside h1 {
+    height: 200px;
+  }
+  /* main {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  nav h2 {
+    background-color: aqua;
+    width: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+  }
+  
   .main-header h1 {
+    display: flex;
+    justify-content: flex-end;
     color: aliceblue;
     display: inline-block;
     margin-block: 100px;
@@ -33,37 +73,76 @@
     color: aquamarine;
   }
 
-h2 {
-margin-left: 1200px;
-margin-bottom: 100px;
-margin-top: 100px;
-line-height: 4;
-background-color:var(--accent);
-color: var(--primary);
-}
 .main {
-background-color: antiquewhite;
+background-color:var(--accent);
+display: flex;
+flex-wrap: wrap;
 }
-.box {
-  margin: 20px;
-  background-color: green;
-  width: 500px;
-  height: 300px;
-  size: 400px;
-  position: relative;
-  text-align: top 200px;
+.main div {
+  flex-direction: row
+}
+.box 
+  {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.images {
+    border-style: solid;
+    border-width: 1px;
+    flex: 0 0 400px;
+    
+  }
+  
+  /* button {
+    width: 250px;
+    margin: 0 .5%;
+    font-size: 200%;
+    color: #13293d;
+    background-color: #fff;
+    border: 3px solid #13293d;
+  } */
+  
+  /* The user's cursor is positioned over the element */
+  button:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--accent) 100px;
+    color: #fff;
+  }
+  
+  /* The user is actively pressing down on the element */
+  button:active {
+    font-size: 10%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+  button:focus {
+    outline: none;
+    border-color: var(--accent);
+    color: aquamarine;
 
-}
-#bigbox {
-  background-color: rgb(100, 25, 25);
-  margin: 20px;
-  float: right;
-  width:790px;
-  height: 400px;
-}
+  }
+  .images header {
+    padding: 20px;
+  }
+  
+  .images p {
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+     text-align: right;
+    font-size: 30px;
+  }
+  
 @media screen and (max-width: 992px) {
-  .box .bigbox {
+  .box {
     width: 50%;
+    background-color: black;
   }
   
   header {
@@ -71,7 +150,8 @@ background-color: antiquewhite;
   }
 }
 @media screen and (max-width: 768px) {
-  .box .bigbox {
+  .box {
     width: 100%;
+    background-color: aqua;
   }
 }
