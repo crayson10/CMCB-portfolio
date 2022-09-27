@@ -5,48 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crayson McBride Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- header -->
     <header>
-        <div class="main-header" id="links">
-            <h1>Crayson McBride </h1>
-                <div>
-                    <ul class="header-links">
-                        <a href="#"> About Me</a> 
-                        <a href="#"> Work</a>
-                        <a href="#"> Contact Me</a> 
-                        <a href="#"> Resume</a>
-                    </ul>
-                </div>    
-        </div>    
+        <h1>Crayson McBride</h1>
+        <nav>
+          <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
     </header>
-    <!-- needs a nav bar -->
-    <nav>
-        <h2>
-            Photography/Videography 
-        </h2>
-        <img id="head-img" src="./assets/images/valleyshot.jpg"
-         style="width: 100%; height: 337px;"
-        alt="clouds covering Union County Oregon sunset">
-    </nav>
-    <!-- BODY WITH BOXES -->
-    <main class="main">
-    <section>
-        <p id="p">
-           Growing up in North-East Oregon, you see and experinece four seasons at its best. Harsh cold snow-packed winters to hot dry weeks of 100 degree temps in the summer. Our spring and fall months are packed full
-        of life and colors. I'm blessed to be a photographer/videographer in this part of the world! </p>
-        </p>
-    </section>
-    <aside>
-        <h1>My Photography</h1>
+    
+    <section class="banner">
+        <div>
+            <h2>Drone Operator</h2>
+        </div>
+    </section>    
         
+        
+    </section>
+    <!-- <section class="page-section" id="about">
+        <img id="head-img" src="./assets/images/valleyshot.jpg"
+        style="width: 100%; height: 337px;"
+        alt="clouds covering Union County Oregon sunset">
+        <h2 style="font-size:40px;" >Drone Operator </h2>
+    </section> 
+     -->
+    <main class="page-wrapper">
+    
+    <section class="page-section" id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>
+               In North-East Oregon, you see and experinece four seasons at its best. Harsh cold snow-packed winters to hot dry weeks of 100 degree temps in the summer. Our spring and fall months are packed full
+            of life and colors. I'm blessed to be a photographer/videographer in this part of the world! </p>
+            </p>
+        </div>
+    </section>
+    
+
+
+    <section class="page-section" id="work">
         <h1>What I like to Capture</h1>
-        </aside>
-        <div class="box">
-            <button class="images">
-                <h3>UP CLOSE PHOTOGRAPHY</h3>
+        <div class="container">
+            <a href="#" class="box owls" alt=" close up of two baby owls in a tree">
+                <div>
+                <h3>Up Close photography</h3>
+                <span>birds before their first flight</span>
+                </div>
+            </a>
+            <a href="#" class="box , waterfowl" alt="ducks swimming in a V shape">
+            <div>
+            <h3>Waterfowl</h3>
+            <span>all year round</span>
+            </div>
+            </a>
+
+            <a href="#" class="box , mountains" alt="'Mount Fanny in Cove Oregon">
+            <div>
+            <h3>Mountains</h3>
+            <span>best of NE Oregon</span>
+            </div>
+            </a>
+
+            <a href="#" class="box , droneshots" alt="sunset, after a rainstorm in Elgin Oregon">
+            <div>
+            <h3>Drone shots</h3>
+            <span>Dji Products</span>
+            </div>
+            </a>
+
+            <a href="#" class="box , elk" alt="picture of a small elk herd">
+            <div>
+            <h3>Wildlife</h3>
+            <span>Oregons Best</span>
+            </div>
+            </a>
+
+        </div>  
+    </section>      
+                <!-- <h3>UP CLOSE PHOTOGRAPHY</h3>
                 <p>birds before their first flight</p>
                 <img src="./assets/images/2owlhead.JPG" style="width: 850px; height:400px;"  alt="2 baby owls in a tree">
                 </button>
@@ -70,24 +113,20 @@
                 <p>Wildlife caught in its beauty</p>
                 <img src="./assets/images/elk.jpg" style="width:400px; height:250px;" alt="Small herd of elk">
             </button>
-        </div>
+        </div> --> 
+        <section class="page-selection contact" id="contact">
+            <h2> Contact Me</h2>
+            <div>    
+                <ul class="nav">
+                    <a href="#"> 1-call-cray </a> 
+                    <a href="#"> crayson.mcbride@gmail.com</a> 
+                    <a href="#"> GitHub</a> 
+                    <a href="#"> Youtube</a> 
+                    <a href="#"> Linkin</a> 
+                </ul>
+            </div>
+        </section>
     </main>
-    <!-- footer -->
-    <footer>
-        <div>
-            <h1> Contact Me</h1>
-        </div>    
-    <section>
-    <nav>
-        <ul class="nav">
-         <a href="#"> 541-805-4071</a> 
-         <a href="#"> crayson.mcbride@gmail.com</a> 
-         <a href="#"> GitHub</a> 
-         <a href="#"> Youtube</a> 
-         <a href="#"> Linkin</a> 
-        </ul>
-    </nav>
-    </section>
     </footer>    
 </body>
 </html>

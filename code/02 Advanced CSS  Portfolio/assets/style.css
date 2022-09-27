@@ -1,138 +1,168 @@
 :root {
 --primary: darkgray;
---accent: midnightblue;
+--accent: #13293d;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  #p {
-    color: #fff;
-    font-size: 25px;
-    text-align: right;
-    list-style-position: outside;
-  }
-  aside {
-    flex: 2;
-    padding: 80px;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    color: #fff;
-    border-right: #fff;
-    border-style: dashed;
-    border: 10px;
-
-  }
-  aside h1 {
-    height: 200px;
-  }
-  /* main {
-    display: flex;
-    flex-wrap: wrap;
-  } */
-  nav h2 {
-    background-color: aqua;
-    width: 25%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .main{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10%;
-  }
-  
-  .main-header h1 {
-    display: flex;
-    justify-content: flex-end;
-    color: aliceblue;
-    display: inline-block;
-    margin-block: 100px;
-    font-size: 40px;
-    height: 100px;
-    line-height: 3;
-    background-color: var(--accent);
-    
-  }
-  #head-img {
-    width: 100%;
-    height: 20%;
-  }
-  .header-links {
-    word-spacing: 5px;
-    text-align: right;
-    justify-content: flex-end;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: flex-end;  
-    font-size: 25px;
-    color: aquamarine;
-  }
-
-.main {
-background-color:var(--accent);
+.banner{
+margin-top: 20px;
+background-image: url("../assets/images/valleyshot.jpg");
+background-size: cover;
+background-position: center;
+background-blend-mode: soft-light;
+color: var(--primary);
+padding: 6% 10%;
 display: flex;
-flex-wrap: wrap;
+justify-content: flex-end;
+align-items: flex-end;
+text-align: right;
 }
-.main div {
-  flex-direction: row
+.banner div {
+  flex:0 0 90%; 
 }
-.box 
-  {
-    flex: 4;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+h1 {
+  font-size: 210%;
+}
+
+/* Add rest of the header text */
+header h1::after {
+  font-family: Impact;
+  color: var(--primary);
+  margin-left: 35px;
+}
+nav li::before,
+nav li::after {
+  color: #8ac4ff;
+  padding: 1%;
+  font-family: cursive;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 350px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+main{
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+body{
+  margin: 0%;
+  padding: 0%;
+  line-height: 2;
+
+}
+
+  .owls{
+    background-image: url("../assets/images/2owlhead.JPG");
+    width: 1000px;
+    height: 500px;
   }
-.images {
-    border-style: solid;
-    border-width: 1px;
-    flex: 0 0 400px;
+.waterfowl {
+  background-image: url("../assets/images/ducks.JPG");
+  /* background-size: 1000px; */
+  width: 500px; 
+  height: 250px;
+
+}
+.mountains {
+  background-image: url("../assets/images/mtfanny.jpg");
+  width: 500px; 
+  height: 250px;
+}
+.droneshots {
+  background-image: url("../assets/images/orangesunset.jpg");
+  width: 500px; 
+  height: 250px;
+}
+.elk{
+  background-image: url("../assets/images/elk.jpg");
+  width: 500px; 
+  height: 250px;
+}
+.page-section {
+    margin: 25px 0;
+    padding:10px 0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
     
   }
-  
-  /* button {
-    width: 250px;
-    margin: 0 .5%;
-    font-size: 200%;
-    color: #13293d;
-    background-color: #fff;
-    border: 3px solid #13293d;
-  } */
-  
-  /* The user's cursor is positioned over the element */
-  button:hover {
+  .page-section > h2 {
+  flex:0 0 100%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 10px solid var(--primary);
+  line-height: 1.1;  
+  }
+.page-section > div {
+  flex: 0 0 108%;
+}
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .box {
+  margin:15px;
+  color:white;
+  display: flex;
+  align-items: flex-end;
+  background-size: 100%;
+  font-size:  14px;
+} 
+
+
+
+   /* The user's cursor is positioned over the element */ */
+   .box:hover {
     background-color: rgb(255, 255, 255);
     box-shadow: var(--accent) 100px;
     color: #fff;
   }
   
-  /* The user is actively pressing down on the element */
-  button:active {
+   
+    .box:active { 
     font-size: 10%;
     box-shadow: 0 0 10px #000 inset;
-  }
+  } 
   
   /* The element is currently in focus, either by tabbing to or clicking on it */
-  button:focus {
+  .box:focus {
     outline: none;
     border-color: var(--accent);
     color: aquamarine;
-
-  }
-  .images header {
+  } */ 
+    /* .images header {
     padding: 20px;
   }
   
   .images p {
     text-align: center;
-  }
+  }  */
   .nav {
     display: flex;
      text-align: right;
@@ -140,7 +170,7 @@ flex-wrap: wrap;
   }
   
 @media screen and (max-width: 992px) {
-  .box {
+  .page-section, .page-wrapper {
     width: 50%;
     background-color: black;
   }
@@ -150,7 +180,7 @@ flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 768px) {
-  .box {
+  .page-section, .page-wrapper {
     width: 100%;
     background-color: aqua;
   }
