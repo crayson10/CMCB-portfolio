@@ -3,20 +3,23 @@
 --accent: #13293d;
 }
 .banner{
-margin-top: 20px;
-background-image: url("../assets/images/valleyshot.jpg");
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-color: var(--primary);
-padding: 6% 10%;
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
-text-align: right;
+  margin-top: 20px;
+  background-image: url("../assets/images/valleyshot.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  color: white;
+  padding: 6% 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
 }
 .banner div {
-  flex:0 0 90%; 
+  flex:0 0 90%;
+  margin-bottom: 20px;
+  color: white;
+  
 }
 
 header {
@@ -51,20 +54,27 @@ nav ul {
   min-width: 350px;
 }
 
-nav a {
+nav a, .contact{
   color: white;
   font-weight: bold;
 }
 
 
+.side-text {
+  max-width: 105%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
-
-
-
-main{
-  margin-top: 20px;
-  margin-bottom: 45px;
+main {
+  background-color: var(--accent);
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 body{
   margin: 0%;
@@ -73,54 +83,90 @@ body{
 
 }
 
-  .owls{
-    background-image: url("../assets/images/2owlhead.JPG");
-    width: 1000px;
-    height: 500px;
+.owls{
+  background-image: url("../assets/images/2owlhead.JPG");
+  width: 800px;
+  height: 400px;
   }
 .waterfowl {
   background-image: url("../assets/images/ducks.JPG");
   /* background-size: 1000px; */
-  width: 500px; 
-  height: 250px;
-
+  width: 400px; 
+  height: 200px;
+  
 }
 .mountains {
   background-image: url("../assets/images/mtfanny.jpg");
-  width: 500px; 
-  height: 250px;
+  width: 400px; 
+  height: 200px;
 }
 .droneshots {
   background-image: url("../assets/images/orangesunset.jpg");
-  width: 500px; 
-  height: 250px;
+  width: 400px; 
+  height: 200px;
 }
 .elk{
   background-image: url("../assets/images/elk.jpg");
-  width: 500px; 
-  height: 250px;
+  width: 400px; 
+  height: 200px;
 }
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: right;
+  font-size: 20px;
+}
+
 .page-section {
     margin: 25px 0;
     padding:10px 0;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
+    color: white;
     
   }
-  .page-section > h2 {
-  flex:0 0 100%;
+.page-section h3 {
+  flex:0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  line-height: 1.1;  
+  }
+
+ .page-section h2 {
+  flex:0 0 20%;
   text-align: right;
   padding-right: 15px;
   border-right: 10px solid var(--primary);
   line-height: 1.1;  
   }
-.page-section > div {
-  flex: 0 0 108%;
+
+.flex-container   {
+  flex: 0 0 70%;
 }
- .container {
+.flex.container  a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-end;
+}
+   
+#inner-work div {
+  flex: 0 0 23%;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+.page-section  div span{
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+} 
+ .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,20 +178,22 @@ body{
   display: flex;
   align-items: flex-end;
   background-size: 100%;
-  font-size:  14px;
+  font-size:  25px;
 } 
 
 
 
    /* The user's cursor is positioned over the element */ */
-   .box:hover {
+  .box:hover {
     background-color: rgb(255, 255, 255);
     box-shadow: var(--accent) 100px;
+    border: 2px black;
+    transition: 1s all;
     color: #fff;
   }
   
    
-    .box:active { 
+  .box:active { 
     font-size: 10%;
     box-shadow: 0 0 10px #000 inset;
   } 
@@ -154,34 +202,43 @@ body{
   .box:focus {
     outline: none;
     border-color: var(--accent);
-    color: aquamarine;
-  } */ 
-    /* .images header {
-    padding: 20px;
-  }
-  
-  .images p {
-    text-align: center;
-  }  */
+    color: orangered;
+  } 
   .nav {
     display: flex;
      text-align: right;
     font-size: 30px;
   }
-  
+.contact {
+  display: flex;
+  align-items:flex-end;
+  padding: 1%;
+  background-color: var(--primary);
+  color: #fff;
+}
+.bottom  {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+word-spacing: 100px;
+color: #fff;
+font: 40px;
+}
+#white-letters{
+  color:#fff
+}
+
 @media screen and (max-width: 992px) {
-  .page-section, .page-wrapper {
-    width: 50%;
+  body{
+    flex: 0 0 50%;
+    max-width: 50%;
     background-color: black;
-  }
-  
-  header {
-    background: #772014;
   }
 }
 @media screen and (max-width: 768px) {
-  .page-section, .page-wrapper {
-    width: 100%;
-    background-color: aqua;
+  body{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  background-color:var(--primary);
   }
 }
